@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url(../assets/fonts/PlusJakartaSans.woff) format('woff'),
+        url(../assets/fonts/PlusJakartaSans.woff2) format('woff2');
+    font-style: normal;
+    font-display: swap;
+    font-weight: 100 900;
+}
+html{
+    font-size: 10px;
+}
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 1.6rem;
+    margin: 0;
+}
+
+h1,p{
+    margin:0;
+}
+:root{
+    --red: hsl(1, 90%, 64%);
+    --blue: hsl(219, 85%, 26%);
+    --white: hsl(0, 0%, 100%);
+    --very-light-grayish-blue: hsl(210, 60%, 98%);
+    --light-grayish-blue-1: hsl(211, 68%, 94%);
+    --light-grayish-blue-2: hsl(205, 33%, 90%);
+    --grayish-blue: hsl(219, 14%, 63%);
+    --dark-grayish-blue: hsl(219, 12%, 42%);
+    --very-dark-blue: hsl(224, 21%, 14%);
+    --font-family: 'Plus Jakarta Sans';
+}
+
+.text-blue{
+    color: var(--blue);
+}
+.text-grayish-blue{
+    color: var(--grayish-blue);
+}
+
+.text-dark-grayish-blue{
+    color: var(--dark-grayish-blue);
+}
+
+.text-very-dark-blue{
+    color:var(--very-dark-blue);
+}
+.font-medium{
+    font-weight: 500;
+}
+.font-bold{
+    font-weight: 700;
+}
+
+.main{
+    height: 100vh;
+    background-color: var(--white);
+    padding: 1em;
+    font-family: var(--font-family), sans-serif;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+.header__title{
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--very-dark-blue);
+    margin-right: .3em;
+}
+.header__number-notification{
+    width: 30px;
+    height:23px;
+    background-color: var(--blue);
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--white);
+    border-radius: .2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header__button{
+    border: none;
+    outline:none;
+    background-color: transparent;
+}
+
+.notification{
+    background-color: var(--light-grayish-blue-1);
+    padding: .8em 1em;
+    border-radius: .5em;
+    display: flex;
+    margin-bottom: .8em;
+}
+.notification__image{
+    display: inline-block;
+    margin: 0;
+    margin-right: 1em;
+}
+.notification__content{
+    font-size: 1.2rem;
+}
+.notification__title{
+    display: inline-block;
+    font-size: inherit;
+    margin: 0;
+    margin-right: .3em;
+}
+
+
+.header div{
+    display:flex;
+    align-items: center;
+}
+
+.footer { 
+    font-size: 11px; 
+    text-align: center;
+    margin-top: auto;
+ }
+.attribution{ 
+    color: hsl(228, 45%, 44%); 
+}
