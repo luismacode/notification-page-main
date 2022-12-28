@@ -1,151 +1,183 @@
 @font-face {
-    font-family: 'Plus Jakarta Sans';
-    src: url(../assets/fonts/PlusJakartaSans.woff) format('woff'),
-        url(../assets/fonts/PlusJakartaSans.woff2) format('woff2');
-    font-style: normal;
-    font-display: swap;
-    font-weight: 100 900;
+  font-family: "Plus Jakarta Sans";
+  src: url(../assets/fonts/PlusJakartaSans.woff) format("woff"),
+    url(../assets/fonts/PlusJakartaSans.woff2) format("woff2");
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
 }
-html{
-    font-size: 10px;
+html {
+  font-size: 10px;
 }
-*,*::after,*::before{
-    box-sizing: border-box;
-}
-
-body{
-    font-size: 1.6rem;
-    margin: 0;
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 
-h1,p{
-    margin:0;
-}
-:root{
-    --red: hsl(1, 90%, 64%);
-    --blue: hsl(219, 85%, 26%);
-    --white: hsl(0, 0%, 100%);
-    --very-light-grayish-blue: hsl(210, 60%, 98%);
-    --light-grayish-blue-1: hsl(211, 68%, 94%);
-    --light-grayish-blue-2: hsl(205, 33%, 90%);
-    --grayish-blue: hsl(219, 14%, 63%);
-    --dark-grayish-blue: hsl(219, 12%, 42%);
-    --very-dark-blue: hsl(224, 21%, 14%);
-    --font-family: 'Plus Jakarta Sans';
+body {
+  font-size: 1.6rem;
+  margin: 0;
 }
 
-.text-blue{
-    color: var(--blue);
+h1,
+p {
+  margin: 0;
 }
-.text-grayish-blue{
-    color: var(--grayish-blue);
-}
-
-.text-dark-grayish-blue{
-    color: var(--dark-grayish-blue);
-}
-
-.text-very-dark-blue{
-    color:var(--very-dark-blue);
-}
-.font-medium{
-    font-weight: 500;
-}
-.font-bold{
-    font-weight: 700;
-}
-.mb-1{
-    margin-bottom:1rem;
+:root {
+  --red: hsl(1, 90%, 64%);
+  --blue: hsl(219, 85%, 26%);
+  --white: hsl(0, 0%, 100%);
+  --very-light-grayish-blue: hsl(210, 60%, 98%);
+  --light-grayish-blue-1: hsl(211, 68%, 94%);
+  --light-grayish-blue-2: hsl(205, 33%, 90%);
+  --grayish-blue: hsl(219, 14%, 63%);
+  --dark-grayish-blue: hsl(219, 12%, 42%);
+  --very-dark-blue: hsl(224, 21%, 14%);
+  --font-family: "Plus Jakarta Sans";
 }
 
-.main{
-    height: 100vh;
-    background-color: var(--white);
-    padding: 1.5em;
-    font-family: var(--font-family), sans-serif;
+.text-blue {
+  color: var(--blue);
+}
+.text-grayish-blue {
+  color: var(--grayish-blue);
+}
+.text-dark-grayish-blue {
+  color: var(--dark-grayish-blue);
+}
+.text-very-dark-blue {
+  color: var(--very-dark-blue);
+}
+.font-medium {
+  font-weight: 500;
+}
+.font-bold {
+  font-weight: 700;
+}
+.mb-1 {
+  margin-bottom: 1rem;
+}
+.pt-04 {
+  padding-top: 0.4rem;
 }
 
-.header{
+.main {
+  height: 100vh;
+  background-color: var(--white);
+  padding: 1.5em;
+  font-family: var(--font-family), sans-serif;
+}
+@media screen and (min-width: 576px) {
+  .main__inner {
+    width: min(100%, 53rem);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 992px) {
+  .main {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin-bottom: 2em;
+    padding: 0;
+  }
 }
-.header__title{
-    font-size: 2.2rem;
-    font-weight: 700;
-    color: var(--very-dark-blue);
-    margin-right: .3em;
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2em;
 }
-.header__number-notification{
-    width: 30px;
-    height:23px;
-    background-color: var(--blue);
-    font-size: 1.6rem;
-    font-weight: 600;
-    color: var(--white);
-    border-radius: .2em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.header__title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--very-dark-blue);
+  margin-right: 0.3em;
 }
-.header__button{
-    border: none;
-    outline:none;
-    background-color: transparent;
+.header__number-notification {
+  width: 30px;
+  height: 23px;
+  background-color: var(--blue);
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--white);
+  border-radius: 0.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-.notification{
-    background-color: var(--white);
-    padding: .8em;
-    border-radius: none;
-    display: flex;
-    margin-bottom: .8em;
-}
-.notification--no-marked{
-    background-color: var(--light-grayish-blue-1);
-    border-radius: .5em;
-}
-.notification__image{
-    display: inline-block;
-    margin: 0;
-    margin-right: 1em;
-}
-.notification__content{
-    font-size: 1.2rem;
-    padding-right: 2em;
-}
-.notification__title{
-    display: inline-block;
-    font-size: inherit;
-    margin: 0;
-    margin-right: .3em;
-}
-.notification__message{
-    padding: 1em;
-    border: 2px solid var(--very-light-grayish-blue);
-    color:var(--dark-grayish-blue);
-}
-.notification__circle{
-    margin-left: .4em;
-    display:inline-block;
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background-color: var(--red);
+.header__button {
+  border: none;
+  outline: none;
+  background-color: transparent;
 }
 
-
-.header div{
-    display:flex;
-    align-items: center;
+.notification {
+  background-color: var(--white);
+  padding: 0.8em;
+  border-radius: none;
+  display: flex;
+  margin-bottom: 0.8em;
+}
+.notification--no-marked {
+  background-color: var(--light-grayish-blue-1);
+  border-radius: 0.5em;
+}
+.notification__image {
+  display: inline-block;
+  margin: 0;
+  margin-right: 1em;
+}
+.notification__content {
+  font-size: 1.2rem;
+  padding-right: 2em;
+}
+.notification__title {
+  display: inline-block;
+  font-size: inherit;
+  margin: 0 0.3em 0 0;
+}
+.notification__message {
+  padding: 1em;
+  border: 2px solid var(--very-light-grayish-blue);
+  color: var(--dark-grayish-blue);
+}
+.notification__circle {
+  margin-left: 0.4em;
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--red);
 }
 
-.footer { 
-    font-size: 11px; 
-    text-align: center;
-    margin-top: auto;
- }
-.attribution{ 
-    color: hsl(228, 45%, 44%); 
+@media screen and (min-width: 576px) {
+  .notification {
+    position: relative;
+  }
+  .notification__image--chess {
+    position: absolute;
+    right: 0;
+    top: 1em;
+  }
+  .notification__content {
+    padding-right: 0;
+  }
+  .notification__message {
+    padding-right: 3em;
+  }
+}
+
+.header div {
+  display: flex;
+  align-items: center;
+}
+
+.footer {
+  font-size: 11px;
+  text-align: center;
+  margin-top: auto;
+}
+.attribution {
+  color: hsl(228, 45%, 44%);
 }
