@@ -24,6 +24,10 @@ h1,
 p {
   margin: 0;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 :root {
   --red: hsl(1, 90%, 64%);
   --blue: hsl(219, 85%, 26%);
@@ -37,23 +41,17 @@ p {
   --font-family: "Plus Jakarta Sans";
 }
 
-.text-blue {
-  color: var(--blue);
-}
 .text-grayish-blue {
   color: var(--grayish-blue);
 }
 .text-dark-grayish-blue {
   color: var(--dark-grayish-blue);
 }
-.text-very-dark-blue {
-  color: var(--very-dark-blue);
-}
 .font-medium {
   font-weight: 500;
 }
-.font-bold {
-  font-weight: 700;
+.font-extrabold {
+  font-weight: 900;
 }
 .mb-1 {
   margin-bottom: 1rem;
@@ -106,7 +104,7 @@ p {
   align-items: center;
   justify-content: center;
 }
-.header__button {
+.button {
   border: none;
   outline: none;
   background-color: transparent;
@@ -180,4 +178,28 @@ p {
 }
 .attribution {
   color: hsl(228, 45%, 44%);
+}
+
+@media (hover: hover) {
+  article h2:hover {
+    color: var(--blue);
+    cursor: pointer;
+  }
+  .notification__image--chess:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+  .notification__message:hover {
+    cursor: pointer;
+    background-color: var(--light-grayish-blue-2);
+    font-weight: 500;
+  }
+  a[class$="font-extrabold"]:hover {
+    color: var(--blue);
+    cursor: pointer;
+  }
+  button:hover {
+    color: var(--blue);
+    cursor: pointer;
+  }
 }
