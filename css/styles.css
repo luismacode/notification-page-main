@@ -92,7 +92,7 @@ a {
   color: var(--very-dark-blue);
   margin-right: 0.3em;
 }
-.header__number-notification {
+.header__counter {
   width: 30px;
   height: 23px;
   background-color: var(--blue);
@@ -111,15 +111,17 @@ a {
 }
 
 .notification {
-  background-color: var(--white);
   padding: 0.8em;
-  border-radius: none;
   display: flex;
   margin-bottom: 0.8em;
 }
-.notification--no-marked {
+.notification--unread {
   background-color: var(--light-grayish-blue-1);
   border-radius: 0.5em;
+}
+.notification--read {
+  background-color: var(--white);
+  border-radius: none;
 }
 .notification__image {
   display: inline-block;

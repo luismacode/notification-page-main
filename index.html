@@ -18,16 +18,17 @@
         <header class="header">
           <div>
             <h1 class="header__title">Notifications</h1>
-            <div class="header__number-notification">3</div>
+            <div id="notification-counter" class="header__counter">3</div>
           </div>
           <button
             type="button"
+            id="button-to-mark-all-as-read"
             class="button text-dark-grayish-blue font-medium"
           >
             Mark all as read
           </button>
         </header>
-        <article class="notification notification--no-marked">
+        <article class="notification notification--unread">
           <figure class="notification__image">
             <img src="./assets/images/avatar-mark-webber.webp" alt="photo"
             width="40" height="40"" />
@@ -44,7 +45,7 @@
             <p class="text-grayish-blue pt-04">1m ago</p>
           </div>
         </article>
-        <article class="notification notification--no-marked">
+        <article class="notification notification--unread">
           <figure class="notification__image">
             <img src="./assets/images/avatar-angela-gray.webp" alt="photo"
             width="40" height="40"" />
@@ -56,7 +57,7 @@
             <p class="text-grayish-blue pt-04">5m ago</p>
           </div>
         </article>
-        <article class="notification notification--no-marked">
+        <article class="notification notification--unread">
           <figure class="notification__image">
             <img src="./assets/images/avatar-jacob-thompson.webp" alt="photo"
             width="40" height="40"" />
@@ -73,7 +74,7 @@
             <p class="text-grayish-blue pt-04">1 day ago</p>
           </div>
         </article>
-        <article class="notification">
+        <article class="notification notification--read">
           <figure class="notification__image">
             <img src="./assets/images/avatar-rizky-hasanuddin.webp" alt="photo"
             width="40" height="40"" />
@@ -93,7 +94,7 @@
             </p>
           </div>
         </article>
-        <article class="notification">
+        <article class="notification notification--read">
           <figure class="notification__image">
             <img src="./assets/images/avatar-kimberly-smith.webp" alt="photo"
             width="40" height="40"" />
@@ -110,7 +111,7 @@
             height="40"" />
           </figure>
         </article>
-        <article class="notification">
+        <article class="notification notification--read">
           <figure class="notification__image">
             <img src="./assets/images/avatar-nathan-peterson.webp" alt="photo"
             width="40" height="40"" />
@@ -126,7 +127,7 @@
             <p class="text-grayish-blue pt-04">2 weeks ago</p>
           </div>
         </article>
-        <article class="notification">
+        <article class="notification notification--read">
           <figure class="notification__image">
             <img src="./assets/images/avatar-anna-kim.webp" alt="photo"
             width="40" height="40"" />
@@ -155,5 +156,7 @@
         </footer>
       </div>
     </main>
+
+    <script src="./src/index.js"></script>
   </body>
 </html>
