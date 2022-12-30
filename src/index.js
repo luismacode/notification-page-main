@@ -9,7 +9,7 @@ buttonToMarkAllAsRead.addEventListener("click", (e) => {
   unreadNotifications.forEach((notify) => {
     notify.classList.remove("notification--unread");
     notify.classList.add("notification--read");
-    const circle = notify.querySelector(".notification__circle");
-    circle.style.display = "none";
+    const smallRedCircle = notify.querySelector(".small-red-circle");
+    smallRedCircle.style.display = "none";
   });
 });
