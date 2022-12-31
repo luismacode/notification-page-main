@@ -29,7 +29,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![notification-page-mobile](./screenshots/notification-page-mobile.jpeg)
+![notification-page-desktop](./screenshots/notification-page-desktop.jpeg)
 
 ### Links
 
@@ -43,24 +44,28 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
+- utility class
+- javascript
+- BEM Naming
 
 ### What I learned
 
+Through the development of this challenge I was able to reinforce my knowledge of HTML and CSS and go over basic Javscript concepts.
+
 ### Continued development
+
+At some point in the future I can do this same challenge only with javascript since I think that the templates of the notifications could be generated easier with javascript instead of putting everything with html or it would also be an option to make web components for this challenge.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [media-hover](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/hover)- An understandable guide to know a little more about the Medium Hover function
+- [css-selectors](https://developer.mozilla.org/es/docs/Web/CSS/CSS_Selectors)- A complete guide to learn about the use case of each CSS selector
+- [utility-classes-tailwindcss](https://tailwindcss.com/docs/installation)- This is official TailwindCSS guide to naming my utility classes inspires me in the class names in TailwindCSS.
+-[min-css](https://developer.mozilla.org/en-US/docs/Web/CSS/min)- This is a guide for learning the use de css function  min.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+- Linkedin - [luismachaca](https://www.linkedin.com/in/luismachaca)
+- Frontend Mentor - [@luismacode](https://www.frontendmentor.io/profile/luismacode)
+- Twitter - [@luismacode](https://www.twitter.com/luismacode)
